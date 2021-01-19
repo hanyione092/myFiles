@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    height: 100vh;
+    background: tomato;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cover-photo{
+    position: relative;
+    height: 32vh;
+    background:url('img/cover-photo.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    background:url('img/profile-picture.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    border-radius: 80px;
+    border: 5px solid white;
+}
+.to-do-list{
+    margin-top: 50px;
+    height: 52vh;
+    margin-left: 1.5rem;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: .5rem;
+    color: white;
+}
+input {
+    margin-bottom: 1rem;
+    padding: .4rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+button{
+    padding: .4rem;
+    outline: none;
+    color: white;
+    width: 5rem;
+    background: none;
+    border-radius: 1rem;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+ul li {
+list-style: none;
+font-weight: 500;
+font-size: 1.3rem;
+letter-spacing: 1px;
+width: 200px;
+color: white;
+padding: 0 0 .5rem 0;
+padding-left: 1rem;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Change Image</h1>
+	<img id="myImage" src="sad.png" width="500">
+	<button type="button"onclick="patrick()">Click Me!</button>
+
+	<script>
+		function patrick(){
+			var image = document.getElementById('myImage');
+			if (image.src.match("happy"))// not sure :(
+			{
+				image.src = "sad.png";
+			}else{
+				image.src = "happy.png";
+			}
+
+			}
+		}
+	</script>
+</body>

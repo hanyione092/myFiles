@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">My To Do List</h2>
+        <input type="text" id="inpKey" placeholder="Title...">
+        <span id="Submit" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+        <div id="finalResult"></div>
+    </ul>
+    <script>
+        const inpKey = document.getElementById("inpKey");
+        const subKey = document.getElementById("Submit");
+        const result = document.getElementById("finalResult");
+        const span = document.getElementById("kwak");
+
+        subKey.onclick = function () {
+
+            const val = inpKey.value;
+            result.innerHTML += "<li>" + val + "<span id = 'kwak' class='close'>&times;</span>" + "</li>";
+
+        }
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function (ev) {
+            if (ev.target.tagName === 'LI') {
+                ev.target.classList.toggle('checked');
+            }
+        }, false);
+        // Click on a close button to hide the current list item
+        span.onclick = function () {
+            span.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Modal</title>
+</head>
+<body>
+    <div class="container" id = "blur">
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum repellat veritatis ipsa inventore, similique deserunt, aliquam tenetur eius, officiis omnis ullam mollitia enim reprehenderit perferendis dolore hic dignissimos corporis. Magni.</h2>
+            <img src = "img/background.jpg">
+            <a href = "#" onclick="toggle()">Read More</a>
+        </div>
+    </div>
+    <script>
+        function toggle(){
+            var blur = document.getElementById("blur");
+            blur.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

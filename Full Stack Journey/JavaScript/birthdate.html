@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Javascript Bertdey</h1>
+
+<input class="" type="text" id="month" placeholder="e.g. October">
+<input class="" type="text" id="day" placeholder="e.g. 17">
+<input class="" type="text" id="year" placeholder="e.g. 1997">
+<button type="button" onclick="result()">Submit</button>
+<br>
+<br>
+
+<h1 style="color: gray"><a id="result"></a></h1>
+<h1 style="color: darkgray"><a id="finalresult"></a></h1>
+
+<script>
+		function result(){
+			var input1 = document.getElementById ("month").value;
+			var input2 = document.getElementById ("day").value;
+			var input3 = document.getElementById ("year").value;
+			var resultvalue = "Your Birthday: " + input1 + " " + input2 + " " + input3;
+			document.getElementById ("result").innerHTML = resultvalue;
+
+			var monthvalue = ["Inlove ako", "Naglalaway ako", " Karang Kara ako", "wet na wet ako", "Nasasarapan ako", "May Crush ako", "Nababahuan ako", "Sarap na Sarap ako", "Gigil na gigil ako", "Eut na eut ako", "Nasang nasa ako", "Naglalaway ako", "Invalid Input"];
+			var dayvalue = ["Aljhon Sabater", "Ruzhel Julian", "Gee Jay Bartolome", "Junathan Rono", "Kenneth Enrico", "Jan Patrick Daganasol", "Via Beljoy", "Regine Besilides", "Maymay", "April Ann Ferolino", "Arianne Balmes", "Allen Paul Aclan", "Manang Guard", "ma'am Lorenzana", "ma'am Parcon", "ma'am Navales", "Sir Ryan John", "Yvanna Nocon", "Karlo Nabablit", "Aries Galera", "Krzysz Gutierrez Estonillo", "Jacy", "John Patrick Buco", "Sr. Jose P. Lisama", "Sr. Alvarez", "Fei Higuerra", "ma'am Fritzy Joyce", "Jemalou", "ma'am Luseco", "Zhyra Caturao", "Invalid Input"];
+			var yearvalue = ["kamukha nya si Smeagol", "mukha syang kambing", "magaling syang magluto ng lugaw", "ang tambok ng pwet nya", "ang ganda ng mga mata nya", "ang bango ng buhok nya", "ang yummy nya", "ang funny nya", "ang laki ng utong nya", "ang dami nyang kuto", "i-neut nya ako kanina", "Invalid Input"]
+	
+			var monthx = Math.floor(Math.random()*12);
+			var dayx = Math.floor(Math.random()*30);
+			var yearx = Math.floor(Math.random() * 10);
+			// var yearx = Math.floor(Math.random() * (2001-1990)+1990);
+
+
+			document.getElementById("finalresult").innerHTML = monthvalue[monthx] + " kay " + dayvalue[dayx] + " dahil "
+			 + yearvalue[yearx];
+		}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* CSS Variable */
+:root{
+    --primary:#ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+  html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--dark);
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  body{
+    background: whitesmoke;
+  }
+  .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 1.2rem 0 1.2rem;
+      align-items: center;
+      background: var(--dark);
+      height: 8vh;
+      margin-bottom: 10px;
+      color: var(--light);
+  }
+  .nav .logo{
+        cursor: pointer;
+  }
+  .wrapper{
+      display: grid;
+      row-gap: 20px;
+      width: 45rem;
+      margin: auto;
+  }
+  .btn{
+    background: transparent;
+    color: var(--dark);
+    padding:0.6rem 1.3rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    border: 1px solid var(--dark);
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+  .btn:hover{
+    color: var(--dark);
+    background: var(--light);      
+  }
+  input {
+    padding:0.6rem .5rem;
+    cursor: pointer;   
+  }
+  .search-bar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 10px;
+  }
+  .search-bars{
+      display: grid;
+      grid-gap: 10px;
+  }
+  .boxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .box{
+    background: var(--primary);
+    padding:1.5rem 2rem;
+    box-shadow: var(--shadow);
+    line-height: 1.8;
+  }
+  @media(max-width: 700px){
+    .wrapper{
+      width: 100%;
+      margin: 0;
+    }
+  }

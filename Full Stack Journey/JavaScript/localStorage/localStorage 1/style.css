@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    height: auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+input,
+button {
+    padding: 7px;
+    height: 40px;
+    outline: none;
+}

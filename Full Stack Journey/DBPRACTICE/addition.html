@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Javascript Addition</h1>
+<p>Test</p>
+
+
+<input class="" type="text" id="addition" placeholder="enter number">
+<input class="" type="text" id="addition2" placeholder="enter number">
+<button type="button" onclick="addition()">Result</button>
+
+<a id="result1">result!</a>
+
+<script>
+		function addition(){
+			var input1 = Number(document.getElementById ("addition").value);
+			var input2 = Number(document.getElementById ("addition2").value);
+			var result = input1 + input2;
+			document.getElementById ("result1").innerHTML = result;
+
+		}
+
+
+</script>
+
+</body>
+</html>

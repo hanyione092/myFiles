@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input[type=text]:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

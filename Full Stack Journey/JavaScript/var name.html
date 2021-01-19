@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: darkgray">
+<div style="text-align: center">
+<h1 style="color: red">Find your True Love</h1>
+
+
+<input style="border-radius: 10px" type="text" id="gotcha" placeholder=" Enter your name" autocomplete="off" >
+<button type="button" onclick="find()" style="border-radius: 10px">Find</button>
+<br></br>
+<h2>Your True Love </h2><h1 style="color:blue" id="result1"></h1>
+</div>
+<script>
+		function find(){
+			var input1 = document.getElementById ("gotcha").value;
+			var input2 = input1.length;
+			if (input1 == "Patrick")
+			{
+				input3 = "April Ann Ferolino";
+				input4 = input1 + " love " + input3;
+			}else if(input1 == "Aljhon")
+			{
+				input3 = "Regine Baselides"
+				input4 = input1 + " love " + input3;
+			}else if (input1 == "Ruzhel")
+			{
+				input3 = "Maymay"
+				input4 = input1 + " love " + input3;				
+			}else {
+				input4 = "wala kang jowa!";
+			}
+			document.getElementById ("result1").innerHTML = input4;
+			return;
+
+		}
+
+
+</script>
+
+</body>
+</html>

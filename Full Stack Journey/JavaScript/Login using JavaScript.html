@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Test</h1>
+
+<input class="" type="text" id="username" placeholder="Username" autocomplete="off">
+<input class="" type="password" id="password" placeholder="Password" autocomplete="off">
+<button type="button" onclick="submit()">Submit</button>
+<h1 id="final">Hi</h1>
+<br>
+<br>
+
+<script>
+		function submit(){
+			var input1 = document.getElementById ("username").value;
+			var input2 = document.getElementById ("password").value;
+
+			if (input1 == "hanyione092" && input2 == "123456789"){
+				var input3 = "Welcome Bro!";
+				window.alert("Login Successfully")
+				window.location.href = "birthdate.html";
+			}
+			else{
+				var input3 = "Incorrect username of password";
+				window.alert("Wrong Password Little Brother")
+			}
+			document.getElementById("final").innerHTML = input3;
+	}	
+</script>
+
+</body>
+</html>

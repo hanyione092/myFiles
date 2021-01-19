@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <a class="navbar-brand" href="">Sistema Administrativo Dental MediExcel</a>
+
+            </div><!-- end .navbar-header -->
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href=""><i class="fa fa-home fa-fw"></i> Home</a></li>
+
+                <li>
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> User
+                        Sample Name <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+
+                        <div class="navbar-content">
+
+                            <p>User Sample Name <span class="text-muted">(username)</span></p>
+                            <p class="text-muted small">useremail@example.com</p>
+
+                        </div>
+
+                        <div class="navbar-footer">
+
+                            <div class="navbar-footer-content clearfix padded">
+
+                                <a href="" class="btn btn-default btn-sm pull-left"><i class="fa fa-wrench fa-fw"></i>
+                                    Change Passowrd</a>
+                                <a href="" class="btn btn-default btn-sm pull-right"><i
+                                        class="fa fa-sign-out fa-fw"></i> Log Out</a>
+
+                            </div>
+
+                        </div>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav><!-- end .navbar -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-sm-3 col-md-2 sidebar">
+
+                <div class="client-info clearfix">
+                    <img src="" alt="Cliente" width="50" height="50" class="pull-left">
+                    <p>Sample Name</p>
+                </div>
+
+                <ul class="nav nav-sidebar">
+
+                    <li><a href=""><i class="fa fa-user fa-fw"></i> Datos Personales</a></li>
+                    <li><a href=""><i class="fa fa-folder fa-fw"></i> Expediente Medico/Dental</a></li>
+
+                    <a class="sidebar-header text-center" data-toggle="collapse" href="#clinica">Actividades
+                        Clinicas</a>
+                    <div class="collapse" id="clinica">
+                        <li><a href=""><i class="fa fa-th-list fa-fw"></i> Plan de Tratamiento</a></li>
+                        <li><a href=""><i class="fa fa-puzzle-piece fa-fw"></i> Odontograma</a></li>
+                        <li><a href=""><i class="fa fa-clipboard fa-fw"></i> Historial de Procedimientos</a></li>
+                    </div>
+
+                    <li class="sidebar-header text-center">Administraci&oacute;n</li>
+                    <li><a href=""><i class="fa fa-search fa-fw"></i> Buscar Paciente</a></li>
+                    <li><a href=""><i class="fa fa-calculator fa-fw"></i> Presupuestos</a></li>
+                    <li><a href=""><i class="fa fa-calculator fa-fw"></i> Presupuestos Procesados</a></li>
+                    <li><a href=""><i class="fa fa-list fa-fw"></i> Pagos Realizados</a></li>
+                    <li><a href=""><i class="fa fa-usd fa-fw"></i> Precios por Grupo</a></li>
+                    <li><a href=""><i class="fa fa-list fa-fw"></i> Utilidades</a></li>
+
+                    <li class="sidebar-header text-center">Inventario</li>
+                    <li><a href=""><i class="fa fa-search fa-fw"></i> Buscar Producto</a></li>
+                    <li><a href=""><i class="fa fa-plus fa-fw"></i> Agregar Producto</a></li>
+                    <li><a href=""><i class="fa fa-cube fa-fw"></i> Productos</a></li>
+                    <li><a href=""><i class="fa fa-times fa-fw"></i> Productos Desactivados</a></li>
+                    <li><a href=""><i class="fa fa-dashboard fa-fw"></i> Unidades de Medida</a></li>
+
+                    <li class="sidebar-header text-center">Paquetes</li>
+                    <li><a href=""><i class="fa fa-tasks fa-fw"></i> Crear Paquete</a></li>
+                    <li><a href=""><i class="fa fa-th-list fa-fw"></i> Paquetes</a></li>
+                    <li><a href=""><i class="fa fa-times fa-fw"></i> Paquetes Desactivados</a></li>
+
+                    <li class="sidebar-header text-center">Entradas</li>
+                    <li><a href=""><i class="fa fa-cubes fa-fw"></i> Entradas de Producto</a></li>
+                    <li><a href=""><i class="fa fa-times fa-fw"></i> Entradas Canceladas</a></li>
+
+                    <li class="sidebar-header text-center">Salidas</li>
+                    <li><a href=""><i class="fa fa-inbox fa-fw"></i> Peticiones</a></li>
+                    <li><a href=""><i class="fa fa-th-large fa-fw"></i>Peticiones Atendidas</a></li>
+                    <li><a href=""><i class="fa fa-times fa-fw"></i>Peticiones Canceladas</a></li>
+
+                    <li class="sidebar-header text-center">Altas</li>
+                    <li><a href=""><i class="fa fa-user-md fa-fw"></i> Medicos</a></li>
+                    <li><a href=""><i class="fa fa-user fa-fw"></i> Pacientes</a></li>
+                    <li><a href=""><i class="fa fa-users fa-fw"></i> Grupos</a></li>
+                    <li><a href=""><i class="fa fa-heart fa-fw"></i> Tratamientos</a></li>
+                    <li><a href=""><i class="fa fa-heart fa-fw"></i> Tratamientos Preventivos</a></li>
+                    <li><a href=""><i class="fa fa-heart fa-fw"></i> Evaluaciones</a></li>
+                </ul>
+
+            </div><!-- end .sidebar -->
+
+        </div>
+
+    </div>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

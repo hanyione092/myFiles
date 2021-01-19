@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>My Calculator (Addition)</h1>
+	Input Number 1: <input id="number1"><br></br>
+	Input Number 2: <input id="number2"><br></br>
+	<button type="button" onclick="myFunction()">Submit</button><br></br>
+	Result: <p id="result"></p>
+
+	<script>
+		function myFunction (){
+			var x = Number(document.getElementById('number1').value);
+			var y = Number(document.getElementById('number2').value);
+			if (isNaN(x) || isNaN(y)){
+				text = "Please enter number only";
+			}
+			else{
+
+			var result = x+y;
+			}
+			document.getElementById('result').innerHTML = result;
+		}
+	</script>
+</body>

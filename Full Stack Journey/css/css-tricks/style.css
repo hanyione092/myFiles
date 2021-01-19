@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100%;
+    height: 100vh;
+    background: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.children{
+    width: 400px;
+    height: 400px;
+}
+input {
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+}
+button {
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    transition: .4s;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background: black;
+}
+
+.c-1{
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    row-gap: 1rem;
+}
+.c-2{
+    background: green;
+}
+.c-3{
+    background: yellow;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}

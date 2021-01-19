@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PEPSI | Patrick</title>
+</head>
+
+<body>
+    <section class="sec" id="sec">
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla vero quam in omnis mollitia illo
+                    architecto, neque cumque dolor. Nihil?</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/pepsi001.png" id="blue-toggle"></li>
+            <li><img src="img/pepsi002.png" id="red-toggle"></li>
+            <li><img src="img/pepsi003.png" id="black-toggle"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script>
+        let colorMode = localStorage.getItem('color');
+
+        const blueToggle = document.querySelector('#blue-toggle');
+        const redToggle = document.querySelector('#red-toggle');
+        const blackToggle = document.querySelector('#black-toggle');
+
+        const enableblueMode = () => {
+
+            document.getElementById("sec").classList.add("bluemode");
+            document.getElementById("sec").classList.remove("redmode");
+            document.getElementById("sec").classList.remove("blackmode");
+            document.querySelector('.pepsi').src = "img/pepsi001.png";
+            localStorage.setItem('color', 'blue');
+        }
+
+        const enableredMode = () => {
+
+            document.getElementById("sec").classList.remove("bluemode");
+            document.getElementById("sec").classList.add("redmode");
+            document.getElementById("sec").classList.remove("blackmode");
+            document.querySelector('.pepsi').src = "img/pepsi002.png";
+            localStorage.setItem('color', 'red');
+        }
+
+        const enableblackMode = () => {
+
+            document.getElementById("sec").classList.remove("bluemode");
+            document.getElementById("sec").classList.remove("redmode");
+            document.getElementById("sec").classList.add("blackmode");
+            document.querySelector('.pepsi').src = "img/pepsi003.png";
+            localStorage.setItem('color', 'black');
+        }
+
+
+
+        const disableAll = () => {
+            document.getElementById("sec").classList.remove("bluemode");
+            document.getElementById("sec").classList.remove("redmode");
+            document.getElementById("sec").classList.remove("blackmode");
+            document.querySelector('.pepsi').src = "img/pepsi001.png";
+            localStorage.setItem('disabled', null);
+        }
+
+        if (colorMode === 'blue') {
+            enableblueMode();
+        } else if (colorMode === 'black') {
+            enableblackMode();
+        } else if (colorMode === 'red') {
+            enableredMode();
+        } else {
+            disableAll();
+        }
+
+
+        blueToggle.addEventListener('click', () => {
+            colorMode = localStorage.getItem('color');
+            if (colorMode !== 'blue') {
+                enableblueMode();
+            }
+        });
+
+        redToggle.addEventListener('click', () => {
+            colorMode = localStorage.getItem('color');
+            if (colorMode !== 'red') {
+                enableredMode();
+            }
+        });
+        blackToggle.addEventListener('click', () => {
+            colorMode = localStorage.getItem('color');
+            if (colorMode !== 'black') {
+                enableblackMode();
+            }
+        });
+    </script>
+</body>
+
+</html>

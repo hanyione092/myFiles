@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.bill {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem !important;
+}
+
+.info .firstname,
+.lastname {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    padding-bottom: .5rem;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding-bottom: 1rem;
+}

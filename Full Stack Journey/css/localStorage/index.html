@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>My localStorage</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cover-photo">
+            <div class="profile-picture"></div>
+        </div>
+        <div class="to-do-list">
+            <h1>To Do List</h1>
+            <input type="text" placeholder="Enter Task" id = "inpVal">
+            <button class="btn" id = "add">ADD</button>
+            <ul>
+                <div id = "to-do"></div>
+                <li>Tumae</li>
+                <li>Kumaen</li>
+                <li>Sleep Early</li>
+                <li>Tumae</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const toDo = document.getElementById("inpVal");
+        const submit = document.getElementById("add");
+
+        submit.onclick = function(){
+
+            localStorage.setItem("", toDo.value);
+        }
+    </script>
+</body>
+</html>

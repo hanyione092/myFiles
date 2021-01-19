@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Mega - Dropdown</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav">
+            <div class="burger-menu" onclick="myFunction(this)" id = "burger-click">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div class="left-nav">
+                <img src = "img/RElogo.png">
+            </div>
+            <div class="right-nav">
+                <a href="#" id = "drop-down">Dashboard <i class="fa fa-caret-down"></i></a>
+                <a href="#"><i class="fas fa-user-alt"></i> <i class="fa fa-caret-down"></i></a>
+            </div>
+        </div>
+        <div class="dropdown-content">
+            <div class="row">
+                <div class="column">
+                    <h2>Dashboard</h2>
+                    <a href="#">View Statistics</a>
+
+                </div>
+                <div class="column">
+                    <h2>Student Research</h2>
+                    <a href="#">Upload Files</a>
+                    <a href="#">View Files</a>
+                    <a href="#">Hidden Files</a>
+                </div>
+                <div class="column">
+                    <h2>Faculty Research</h2>
+                    <a href="#">Upload Files</a>
+                    <a href="#">View Files</a>
+                    <a href="#">Hidden Files</a>
+                </div>
+                <div class="column">
+                    <h2>Forms and Report</h2>
+                    <a href="#">Extension Report</a>
+                    <a href="#">Downloadable Forms</a>
+                </div>
+                <div class="column">
+                    <h2>Field of Specialization</h2>
+                    <a href="#">Update Field of Specialization</a>
+                </div>
+                <div class="column">
+                    <h2>Accounts</h2>
+                    <a href="#">Create Account</a>
+                    <a href="#">View Account</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <h1>Container!</h1>
+        </div>
+    </div>
+
+    <script> 
+        $(document).ready(function(){
+          $("#drop-down").click(function(){
+            document.getElementById('burger-click').classList.toggle("change");
+            $(".dropdown-content").slideToggle("slow");
+          });
+
+        $("#burger-click").click(function(){
+            document.getElementById('burger-click').classList.toggle("change");
+            $(".dropdown-content").slideToggle("slow");
+        });
+
+        });
+        </script>
+</body>
+</html>

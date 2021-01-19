@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Javascript Bertdey</h1>
+
+<input class="" type="text" id="month" placeholder="e.g. October">
+<input class="" type="text" id="day" placeholder="e.g. 17">
+<input class="" type="text" id="year" placeholder="e.g. 1997">
+<button type="button" onclick="result()">Submit</button>
+<br>
+<br>
+
+<h1 style="color: gray"><a id="result"></a></h1>
+<h1 style="color: darkgray"><a id="finalresult"></a></h1>
+
+<script>
+		function result(){
+			var input1 = document.getElementById ("month").value;
+			var input2 = document.getElementById ("day").value;
+			var input3 = document.getElementById ("year").value;
+			var resultvalue = "Your Birthday: " + input1 + " " + input2 + " " + input3;
+			document.getElementById ("result").innerHTML = resultvalue;
+
+			var monthvalue = ["Inlove ako", "Naglalaway ako", " Karang Kara ako", "wet na wet ako", "Nasasarapan ako", "May Crush ako", "Nababahuan ako", "Sarap na Sarap ako", "Gigil na gigil ako", "Eut na eut ako", "Nasang nasa ako", "Naglalaway ako", "Invalid Input"];
+			var dayvalue = ["Aljhon Sabater", "Ruzhel Julian", "Gee Jay Bartolome", "Junathan Rono", "Kenneth Enrico", "Jan Patrick Daganasol", "Via Beljoy", "Regine Besilides", "Maymay", "April Ann Ferolino", "Arianne Balmes", "Allen Paul Aclan", "Manang Guard", "ma'am Lorenzana", "ma'am Parcon", "ma'am Navales", "Sir Ryan John", "Yvanna Nocon", "Karlo Nabablit", "Aries Galera", "Krzysz Gutierrez Estonillo", "Jacy", "John Patrick Buco", "Sr. Jose P. Lisama", "Sr. Alvarez", "Fei Higuerra", "ma'am Fritzy Joyce", "Jemalou", "ma'am Luseco", "Zhyra Caturao", "Invalid Input"];
+			var yearvalue = ["kamukha nya si Smeagol", "mukha syang kambing", "magaling syang magluto ng lugaw", "ang tambok ng pwet nya", "ang ganda ng mga mata nya", "ang bango ng buhok nya", "ang yummy nya", "ang funny nya", "ang laki ng utong nya", "ang dami nyang kuto", "i-neut nya ako kanina", "Invalid Input"]
+			var monthx, dayx, yearx;
+			if (input1 == "January"){
+				monthx = 0;
+			}else if (input1 == "February"){
+				monthx = 1;
+			}else if (input1 == "March"){
+				monthx = 2;
+			}else if (input1 == "April"){
+				monthx = 3;
+			}else if (input1 == "May"){
+				monthx = 4;
+			}else if (input1 == "June"){
+				monthx = 5;
+			}else if (input1 == "July"){
+				monthx = 6;
+			}else if (input1 == "August"){
+				monthx = 7;
+			}else if (input1 == "September"){
+				monthx = 8;
+			}else if (input1 == "October"){
+				monthx = 9;
+			}else if (input1 == "November"){
+				monthx = 10;
+			}else if (input1 == "December"){
+				monthx = 11;
+			}else{
+				monthx = 12;
+			}
+			if (input2 == "1"){
+				dayx = 0;
+			}else if (input2 == "2"){
+				dayx = 1;
+			}else if (input2 == "3"){
+				dayx = 1;
+			}else if (input2 == "4"){
+				dayx = 3;
+			}else if (input2 == "5"){
+				dayx = 4;
+			}else if (input2 == "6"){
+				dayx = 5;
+			}else if (input2 == "7"){
+				dayx = 6;
+			}else if (input2 == "8"){
+				dayx = 7;
+			}else if (input2 == "9"){
+				dayx = 8;
+			}else if (input2 == "10"){
+				dayx = 9;
+			}else if (input2 == "11"){
+				dayx = 10;
+			}else if (input2 == "12"){
+				dayx = 11;
+			}else if (input2 == "13"){
+				dayx = 12;
+			}else if (input2 == "14"){
+				dayx = 13;
+			}else if (input2 == "15"){
+				dayx = 14;
+			}else if (input2 == "16"){
+				dayx = 15;
+			}else if (input2 == "17"){
+				dayx = 16;
+			}else if (input2 == "18"){
+				dayx = 17;
+			}else if (input2 == "19"){
+				dayx = 18;
+			}else if (input2 == "20"){
+				dayx = 19;
+			}else if (input2 == "21"){
+				dayx = 20;
+			}else if (input2 == "22"){
+				dayx = 21;
+			}else if (input2 == "23"){
+				dayx = 22;
+			}else if (input2 == "24"){
+				dayx = 23;
+			}else if (input2 == "25"){
+				dayx = 24;
+			}else if (input2 == "26"){
+				dayx = 25;
+			}else if (input2 == "27"){
+				dayx = 26;
+			}else if (input2 == "28"){
+				dayx = 27;
+			}else if (input2 == "29"){
+				dayx = 28;
+			}else if (input2 == "30"){
+				dayx = 29;
+			}else if (input2 == "31"){
+				dayx = 30;
+			}else {
+				dayx = 31;
+			}
+
+			if (input3 == "1990"){
+				yearx = 0;
+			}else if (input3 == "1991"){
+				yearx = 1;
+			}else if (input3 == "1992"){
+				yearx = 2;				
+			}else if (input3 == "1993"){
+				yearx = 3;				
+			}else if (input3 == "1994"){
+				yearx = 4;				
+			}else if (input3 == "1995"){
+				yearx = 5;				
+			}else if (input3 == "1996"){
+				yearx = 6;				
+			}else if (input3 == "1997"){
+				yearx = 7;				
+			}else if (input3 == "1998"){
+				yearx = 8;				
+			}else if (input3 == "1999"){
+				yearx = 9;				
+			}else if (input3 == "2000"){
+				yearx = 10;				
+			}else {
+				yearx = 11;
+			}
+
+			document.getElementById("finalresult").innerHTML = monthvalue[monthx] + " kay " + dayvalue[dayx] + " dahil "
+			 + yearvalue[yearx];
+
+		}
+
+
+</script>
+
+</body>
+</html>
