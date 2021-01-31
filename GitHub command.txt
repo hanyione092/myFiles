@@ -1,0 +1,59 @@
+$ git init //Initialize Local Git Repository
+$ git add <file> //Add Files(s) To Index
+$ git status // Check Sttatus of working tree
+$ git commit // Commit Changes in Index
+$ git push // Push to Remote Repository
+$ git pull //Pull Latest From Remote Repository
+$ git clone //Clone repository into a new directory
+
+examples:
+
+	touch index.html // to create files, index.html is just an example
+	git config --global user.name 'Patrick Buco'
+	git config --global user.email 'jpbuco@cvsu.edu.ph'
+	git add index.html
+	git status
+	git rm --cached index.html - delete files
+	git add *.html - add all the html file
+	git add . - to add everything
+	git commit - will redirect you to another cmd
+
+	Letter i: so you can type in command
+	esc to escape in type command
+	:wq
+	git commit -m 'Changed app.js'
+
+	touch .gitignore
+	touch log.txt
+	include log.txt to .gitignore
+	git add .
+	git status
+
+	git branch login - means if you create new file, that file is not on the master branch but in the login
+			 - if you redirect to login branch, login.html will disappear because it's in the login branch
+	git checkout login
+	git commit -m 'another change'
+	git commit -m 'login form'
+	git merge login
+	then type Added login
+
+	------------online mode-----------------------
+	git remote add origin https://github.com/hanyione092/myFiles.git
+	git remote
+	git push -u origin master
+	git commit -m 'Added or Changed README'
+	git pull - if someone modified the files in github repository
+
+	------simple operation-------
+	git status
+	git add 'index.html' or git add . or git add *.html
+	git commit -m 'Added by patrick'
+	git push -u origin master
+
+	----delete files------------
+	git rm --cached patrick.txt
+	git commit -m 'deletes patrick.txt'
+	git push -u origin master
+
+	-------the file will have its original line endings in your working directory---
+	git config --global core.autocrlf true
